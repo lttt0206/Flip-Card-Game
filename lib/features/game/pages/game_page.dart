@@ -66,8 +66,8 @@ class _GamePageState extends State<GamePage> {
         return (3, 4);
       case Difficulty.hard4x4:
         return (4, 4);
-      case Difficulty.insane5x6:
-        return (5, 6);
+      // case Difficulty.insane5x6:
+      //   return (5, 6);
     }
   }
 
@@ -79,8 +79,8 @@ class _GamePageState extends State<GamePage> {
         return "Normal (3×4)";
       case Difficulty.hard4x4:
         return "Hard (4×4)";
-      case Difficulty.insane5x6:
-        return "Insane (5×6)";
+      // case Difficulty.insane5x6:
+      //   return "Insane (5×6)";
     }
   }
 }

@@ -15,4 +15,4 @@ class CardItem {
 }
 
 // lib/core/models/difficulty.dart
-enum Difficulty { easy2x2, normal3x4, hard4x4, insane5x6 }
+enum Difficulty { easy2x2, normal3x4, hard4x4 }

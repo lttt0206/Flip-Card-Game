@@ -33,7 +33,7 @@ class GameRepository {
       case Difficulty.easy2x2: return 2;   // 2 pairs
       case Difficulty.normal3x4: return 6; // 6 pairs
       case Difficulty.hard4x4: return 8;   // 8 pairs
-      case Difficulty.insane5x6: return 15; // 15 pairs
+      // case Difficulty.insane5x6: return 15; // 15 pairs
     }
   }
 }

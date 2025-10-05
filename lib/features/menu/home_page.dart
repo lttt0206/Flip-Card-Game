@@ -55,10 +55,10 @@ class HomePage extends StatelessWidget {
               ),
               const SizedBox(height: 16),
 
-              ElevatedButton(
-                onPressed: () => _startGame(context, Difficulty.insane5x6),
-                child: const Text("Insane (5x6)"),
-              ),
+              // ElevatedButton(
+              //   onPressed: () => _startGame(context, Difficulty.insane5x6),
+              //   child: const Text("Insane (5x6)"),
+              // ),
             ],
           ),
         ),

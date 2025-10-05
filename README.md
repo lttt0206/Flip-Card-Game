@@ -1,16 +1,64 @@
-# flip_card_game
+# 🃏 Flip-Card Game (Flutter + BLoC)
 
-A new Flutter project.
+A minimalist **memory match game** built with **Flutter** and **BLoC**.  
+Players flip cards to find pairs, track their **time** and **moves**, and try to clear the board as fast as possible.  
+This project demonstrates clean architecture, state management, and smooth UI animations — perfect for a portfolio.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🎮 Features
+- Difficulty levels: **2×2, 3×4, 4×4, 5×6**  
+- Animated card flips (front/back)  
+- HUD with **Timer** and **Moves** counter  
+- Reset button to start a fresh game  
+- Light & Dark themes  
+- Responsive design (works on phones & tablets)  
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 🛠️ Tech Stack
+- **Flutter** (UI + animations)  
+- **BLoC** (state management)  
+- **Repository pattern** (deck generation & logic)  
+- **Custom Theme** (colors, text styles, card styles)  
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## 📂 Project Structure
+lib/
+├─ core/
+│ ├─ models/ # CardItem, Difficulty
+│ ├─ theme/ # app_colors.dart, app_text_styles.dart, app_theme.dart
+│ └─ utils/ # shuffle, timer helpers
+│
+├─ data/
+│ └─ repositories/ # game_repository.dart
+│
+├─ features/
+│ ├─ menu/ # home_page.dart
+│ └─ game/
+│   ├─ bloc/ # game_bloc.dart, game_event.dart, game_state.dart
+│   ├─ widgets/ # card_tile.dart
+│   └─ pages/ # game_page.dart
+│
+├─ app.dart # MaterialApp, routes, theme
+└─ main.dart # entry point
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- [Flutter SDK](https://docs.flutter.dev/get-started/install) (3.19+)  
+- Dart 3+  
+
+### Installation
+```bash
+# Clone the repo
+git clone https://github.com/your-username/flip-card-game.git
+cd flip-card-game
+
+# Install dependencies
+flutter pub get
+
+# Run the app
+flutter run

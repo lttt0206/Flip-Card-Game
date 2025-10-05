@@ -24,25 +24,6 @@ This project demonstrates clean architecture, state management, and smooth UI an
 
 ---
 
-## 📂 Project Structure
-lib/
-├─ core/
-│ ├─ models/ # CardItem, Difficulty
-│ ├─ theme/ # app_colors.dart, app_text_styles.dart, app_theme.dart
-│ └─ utils/ # shuffle, timer helpers
-│
-├─ data/
-│ └─ repositories/ # game_repository.dart
-│
-├─ features/
-│ ├─ menu/ # home_page.dart
-│ └─ game/
-│   ├─ bloc/ # game_bloc.dart, game_event.dart, game_state.dart
-│   ├─ widgets/ # card_tile.dart
-│   └─ pages/ # game_page.dart
-│
-├─ app.dart # MaterialApp, routes, theme
-└─ main.dart # entry point
 ---
 
 ## 🚀 Getting Started
